@@ -1,3 +1,6 @@
+// index.js
+// OpenTelemetry Import
+import './tracing';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';

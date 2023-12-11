@@ -13,9 +13,9 @@ const provider = new WebTracerProvider({
     }),
 });
 const exporter = new OTLPTraceExporter({
-    url: 'https://ingest.in.signoz.cloud:443/v1/traces',
+    url: 'https://ingest.[region].signoz.cloud:443/v1/traces',
     headers: {
-        "signoz-access-token": "72282c07-60ad-45ff-9131-3b8819f9cdc3",
+        "signoz-access-token": "your SigNoz Ingestion key",
     },
 });
 provider.addSpanProcessor(new BatchSpanProcessor(exporter));
